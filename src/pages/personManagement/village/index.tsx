@@ -85,11 +85,7 @@ const Village = () => {
       title: "审核状态",
       dataIndex: "status",
       align: "center",
-      render: (text: any) => (
-        <Tag color={text === 1 ? "error" : "success"}>
-          {statusList[text - 1]?.label}
-        </Tag>
-      ),
+      render: (text: any) => <Tag color={text === 1 ? "error" : "success"}>{statusList[text - 1]?.label}</Tag>,
     },
     {
       title: "注册时间",
