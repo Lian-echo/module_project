@@ -1,0 +1,157 @@
+
+html,
+body,
+#root {
+  height: 100%;
+}
+fieldset,
+img {
+  border: 0;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+input,
+textarea {
+  outline-style: none;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  appearance: none;
+}
+
+textarea {
+  resize: none
+}
+.colorWeak {
+  filter: invert(80%);
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.ant-menu-inline .ant-menu-item,.ant-menu-vertical .ant-menu-item{
+  margin-top:0 ;
+  border-radius: 0;
+}
+.ant-menu-vertical .ant-menu-submenu-title{
+  margin-inline: 4px !important;
+}
+.ant-menu .ant-menu-submenu,:where(.css-dev-only-do-not-override-1wazalj).ant-menu .ant-menu-item, :where(.css-dev-only-do-not-override-1wazalj).ant-menu .ant-menu-submenu, :where(.css-dev-only-do-not-override-1wazalj).ant-menu .ant-menu-submenu-title{ /*去除二级菜单第一级点击border样式*/
+  border-radius: 0 !important;
+
+}
+.ant-menu-submenu-title{ /* 选中右边白色边框 */
+  width: 100% !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+.ant-menu-item-selected::after{
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+/* 修改侧边栏收缩展示背景色 */
+.ant-layout-sider-trigger{
+  color: #fff !important;
+  background: #1F2129 !important;
+}
+/* 修改侧边栏字体颜色 */
+.ant-menu-title-content a ,.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+  color: rgba(255, 255, 255, 0.65);
+}
+/* 选中菜单状态 */
+.ant-menu-item-selected,.ant-menu-submenu-inline{
+  background: rgba(14,64,151,0.08);
+  color: #fff !important;
+  margin: 0;
+  border-radius: 0 !important;
+  width: 100%;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item{
+  margin: 0;
+  width: 100%;
+}
+
+.ant-menu-submenu-title{
+  margin: 0 !important;
+}
+/* 设置 main 高度scroll */
+.ant-layout-content{
+  overflow-y: scroll;
+}
+/* 设置未选中菜单项鼠标滑过样式 */
+.ant-menu-item-active ,.ant-menu-submenu{
+  color: #fff !important;
+  margin: 0;
+}
+.ant-menu-submenu-title{
+  margin: 0;
+}
+.ant-layout-has-sider{
+  height: 100vh;
+}
+ :where(.css-dev-only-do-not-override-k7429z).ant-menu-dark.ant-menu-inline .ant-menu-item-selected::after {
+  border-right: 2px solid #fff;
+}
+.ant-menu-inline ,.ant-layout-sider-children,.ant-menu-submenu{
+  background: #1F2129 !important;
+}
+.ant-layout .ant-layout-sider-children .ant-menu.ant-menu-inline-collapsed{
+  background: #1F2129;
+}
+
+
+
+

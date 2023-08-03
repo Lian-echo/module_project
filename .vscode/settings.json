@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.formatOnSave": true, // 在保存时自动格式化代码
+  "editor.formatOnType": true, // 在输入时自动格式化代码
+  "editor.tabSize": 2, // 缩进大小
+  "editor.wordWrap": "on", // 开启自动换行
+  // "typescript.check.npmIsInstalled": false, // 禁用 NPM 安装检查
+  "typescript.validate.enable": true // 启用 TypeScript 检查
+}
