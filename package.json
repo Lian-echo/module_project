@@ -21,7 +21,7 @@
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.6.10",
     "@ant-design/pro-layout": "^6.5.0",
-    "antd": "^5.8.0",
+    "antd": "^5.8.1",
     "file-loader": "^6.2.0",
     "md5": "^2.3.0",
     "react": "17.x",
