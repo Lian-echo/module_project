@@ -1,8 +1,19 @@
 export default [
   {
+    path: "/",
+    redirect: "/personManagement/village",
+    component: "@/pages/personManagement/village",
+    title: "成员管理",
+  },
+  {
     path: "/login",
     component: "@/pages/login/index.tsx",
     title: "登陆",
+  },
+  {
+    path: "/largeScreen",
+    title: "可视化大屏",
+    component: "@/pages/largeScreen/index.tsx",
   },
   {
     path: "/",
