@@ -22,7 +22,7 @@ const LargeScreen = () => {
     const a = 'aaa';
     const b = '';
     const c = 'bbb';
-    const d = c === 'bbb' ? 1 : b || a;
+    const d =  c === 'bbb' ? 1 : b || a;
     console.log(d);
   };
 
