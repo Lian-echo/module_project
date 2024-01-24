@@ -22,14 +22,7 @@ const LargeScreen = () => {
     const a = 'aaa';
     const b = '';
     const c = 'bbb';
-    const d =  c === 'bbb' ? 1 : b || a;
-    console.log(d);
-  };
-
-  const add2 = () => {
-    const a = 'aaa';
-    const b = '';
-    const c = 'bbb';
+    // prettier-ignore
     const d = c === 'bbb' ? 1 : (b || a);
     console.log(d);
   };
