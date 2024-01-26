@@ -1,0 +1,30 @@
+name: Auto Label by Commit Message
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check commit message and add label
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const commits = await github.repos.listCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha
+            });
+            const commitMessage = commits.data[0].commit.message;
+            if (commitMessage.includes('bug')) {
+              github.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['bug']
+              });
+            }
