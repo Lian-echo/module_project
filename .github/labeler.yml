@@ -13,3 +13,7 @@ docs:
 docker:
   - changed-files:
       - any-glob-to-any-file: Dockerfile
+
+dependence:
+  - changed-files:
+      - any-glob-to-any-file: package.json
