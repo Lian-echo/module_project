@@ -1,11 +1,15 @@
-documentation:
-  - changed-files:
-      - any-glob-to-any-file: "**/*.md"
-
 core:
   - changed-files:
       - any-glob-to-any-file: "src/**/*"
 
-login:
+github:
   - changed-files:
-      - any-glob-to-any-file: "src/pages/login/*"
+      - any-glob-to-any-file: .github/*
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file: README.md
+
+docker:
+  - changed-files:
+      - any-glob-to-any-file: Dockerfile

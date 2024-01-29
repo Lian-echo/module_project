@@ -13,6 +13,3 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
-
-documentation
-documentation
