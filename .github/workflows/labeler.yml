@@ -1,13 +1,12 @@
-name: Auto Label by Commit Message
-
+name: "Pull Request Labeler"
 on:
-  push:
-    branches:
-      - main
+  - pull_request_target
 
 jobs:
-  add-label:
+  labeler:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: Check commit message and add label
-        uses: actions/github-script@v5
+      - uses: actions/labeler@v5
