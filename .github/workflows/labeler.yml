@@ -14,27 +14,6 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const commits = await github.repos.listCommits({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              sha: context.sha
-            });
-
-            const commitMessage = commits.data[0].commit.message;
-            console.log('Commit message:', commitMessage);
-
-            if (commitMessage.includes('fix')) {
-              await github.issues.addLabels({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                labels: ['bug']
-              });
-            } else if (commitMessage.includes('feat')) {
-              await github.issues.addLabels({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                labels: ['enhancement']
-              });
-            }
+            documentation :
+            - changed-files:
+              - any-glob-to-any-file: '**/*.md'
