@@ -1,3 +1,9 @@
+enhancement:
+  - head-branch: ["^feat", "feat"]
+
+bug:
+  - head-branch: ["^fix", "fix"]
+
 core:
   - changed-files:
       - any-glob-to-any-file: "src/**/*"
