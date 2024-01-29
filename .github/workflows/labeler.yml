@@ -11,9 +11,3 @@ jobs:
     steps:
       - name: Check commit message and add label
         uses: actions/github-script@v5
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            documentation :
-            - changed-files:
-              - any-glob-to-any-file: '**/*.md'
